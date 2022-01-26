@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebles</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!--Menu de la pagina-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient text-danger border border-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/tipi1.jpg"  width="120" alt="">
+                    <h4 class="text-danger".text-danger>ALTAMIRANO MUEBLES</h4>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" style="font-size: 1.5rem;font-family: 'Lobster Two', cursive;">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning bg-dark".text-warning href="contactenos.html" style="font-size: 1.5rem;font-family: 'Lobster Two', cursive;">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-title">
+        <div class=" text-center" style="margin-top: 100px; margin-bottom: 10px;">
+            <h3 class="card-title text-dark bg-primary" >Formulario Cliente</h3>
+        </div>
+    </section>
+    <section class="form d-flex align-self-center" style="padding: 40px;">
+        <div class="container bg-dark text-light">
+            <form style="padding: 20px;">
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="">Nombres</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="">Apellidos</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault03">Correo</label>
+                        <input type="text" class="form-control" id="correo" placeholder="Correo" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault04">Requerimiento</label>
+                        
+                        <select class="custom-select" id="tipomensaje" required>
+                        <option selected disabled value="">Seleccione una opción</option>
+                        <option value="Cotizacion">Cotizacion</option>
+                        <option value="Felicitaciones">Garantia</option>
+                        <option value="Quejas">Reclamos</option>
+                        </select>
+
+                    </div>
+                    <div class="col-md-12 mb-6">
+                        <label for="validationDefault04">Comentario</label>
+                        <textarea class="form-control" name="comentario" id="comentario"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                      terminos y condiciones
+                    </label>
+                  </div>
+                </div>
+                <button class="btn btn-danger" type="submit" onclick="validar()">Enviar</button>
+            </form>
+        </div>
+    </section>      
+
+    <footer>
+        <section class="main-title">
+            <div class=" text-center" style="margin-top: 10px;">
+                <h5 class="card-title bg-dark text-light" style="padding:20px; font-family: 'Lobster Two', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">En ALTAMIRANO cuidamos todos y cada uno de los detalles.</h5>
+                <h4 class="display-6 bg-danger ">MANUEL ALBERTO CUBILLOS CARRILLO</h4>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./js/javascript.js"></script>
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js" ></script>
+    
+
+</body>
+</html>
